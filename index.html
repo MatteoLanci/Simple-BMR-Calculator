@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI Calculator|BakaDev.</title>
+  </head>
+  <body>
+    <header>
+      <h1>BMR Calculator</h1>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Calcola il tuo BMR</h2>
+        <form id="bmi-form">
+          <input type="text" placeholder="Peso (kg)" id="weight" required />
+          <input type="text" placeholder="Altezza (cm)" id="height" required />
+          <input type="text" placeholder="Età" id="age" required />
+          <select id="gender" name="gender" required>
+            <option value="-" id="">-</option>
+            <option value="male" id="male">Uomo</option>
+            <option value="female" id="female">Donna</option>
+          </select>
+          <button
+            type="button"
+            class="calculate"
+            id="submit"
+            onclick="calculateBMR();"
+          >
+            Calcola ora
+          </button>
+        </form>
+        <div class="result" id="result" name="result"></div>
+      </div>
+    </main>
+    <footer>
+      <p>Created by <a href="https://github.com/MatteoLanci">BakaDev.</a></p>
+    </footer>
+    <script src="index.js" defer></script>
+  </body>
+</html>
